@@ -1,0 +1,8 @@
+.product-list {
+    display: grid;                  /* Use CSS Grid for product layout */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;                      /* Spacing between cards */
+    padding: 20px;                  /* Outer padding for the container */
+    background-color: #fff;         /* Or whatever background you need */
+  }
+  

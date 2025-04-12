@@ -1,0 +1,186 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #ffc107;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px;
+  outline: none;
+  width: 180px; /* Reduce width for better fit */
+  font-size: 14px;
+}
+
+.search-bar button {
+  background-color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Cart and User Icons */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Cart Icon Container */
+.cart-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Cart Icon */
+.cart-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Cart Count Badge */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 8px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* User Icon */
+.user-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+      display: flex;
+      flex-direction: row; /* Keep items in a row */
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+
+  .nav-links {
+      font-size: 14px;
+      gap: 10px;
+      display: flex;
+  }
+
+  .nav-links a {
+      font-size: 14px;
+  }
+
+  .search-bar input {
+      width: 140px;
+      padding: 6px;
+  }
+
+  .cart-icon,
+  .user-icon {
+      font-size: 20px;
+  }
+}
+
+/* 📱 Extra Small Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .navbar {
+      padding: 8px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo {
+      font-size: 20px;
+  }
+
+  .nav-links {
+      gap: 8px;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links a {
+      font-size: 12px;
+  }
+
+  .search-bar input {
+      width: 120px;
+      padding: 5px;
+  }
+
+  .cart-container {
+      position: relative;
+  }
+
+  .cart-count {
+      top: -5px;
+      right: -5px;
+      font-size: 10px;
+      padding: 3px 6px;
+  }
+
+  .cart-icon,
+  .user-icon {
+      font-size: 18px;
+  }
+}
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  background: white;
+}
+
+  
+  
